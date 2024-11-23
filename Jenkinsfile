@@ -32,7 +32,7 @@
             input {
                 message "ready to deploy to prod ?"
                 ok "yes"
-                submitter "TAMILTECH"
+                submitter "TAMILTECH,kunju"
             }
             steps{
                 echo "prod"
