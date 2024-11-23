@@ -1,4 +1,4 @@
-pipeline{
+ pipeline{
     agent any
     stages{
         stage('build'){
@@ -29,6 +29,11 @@ pipeline{
         }
 
         stage('deploy to prod'){
+            input {
+                message "ready to deploy to prod ?"
+                ok "yes"
+                submitter "TAMILTECH"
+            }
             steps{
                 echo "prod"
             }
